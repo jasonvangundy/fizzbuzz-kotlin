@@ -7,5 +7,10 @@ public class FizzBuzzTest {
     fun testReturnsFizzFor3() {
         assertEquals("fizz", FizzBuzz().get(3))
     }
+
+    @Test
+    fun testReturnsBuzzFor5() {
+        assertEquals("buzz", FizzBuzz().get(5))
+    }
 }
 

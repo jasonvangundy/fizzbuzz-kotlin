@@ -32,5 +32,10 @@ public class FizzBuzzTest {
         assertEquals("fizz", classToTest.get(9))
         assertEquals("fizz", classToTest.get(12))
     }
+
+    @Test
+    fun testReturnsFizzbuzzFor15() {
+        assertEquals("fizzbuzz", classToTest.get(15))
+    }
 }
 

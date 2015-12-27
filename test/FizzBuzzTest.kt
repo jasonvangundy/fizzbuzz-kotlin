@@ -12,5 +12,10 @@ public class FizzBuzzTest {
     fun testReturnsBuzzFor5() {
         assertEquals("buzz", FizzBuzz().get(5))
     }
+
+    @Test
+    fun testReturnsNumberAsStringIfNotDivisibleBy5Or3() {
+        assertEquals("1", FizzBuzz().get(1))
+    }
 }
 

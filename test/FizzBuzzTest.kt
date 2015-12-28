@@ -1,48 +1,39 @@
-import org.junit.Before
 import org.junit.Test
-import kotlin.test.*
+import kotlin.test.assertEquals
 
 public class FizzBuzzTest {
 
-    lateinit var classToTest: FizzBuzz
-
-    @Before
-    fun setUp() {
-        classToTest = FizzBuzz()
-    }
-
     @Test
     fun testReturnsFizzFor3() {
-        assertEquals("fizz", classToTest.get(3))
+        assertEquals("fizz", get(3))
     }
 
     @Test
     fun testReturnsBuzzFor5() {
-        assertEquals("buzz", classToTest.get(5))
+        assertEquals("buzz", get(5))
     }
 
     @Test
     fun testReturnsNumberAsStringIfNotDivisibleBy5Or3() {
-        assertEquals("1", classToTest.get(1))
+        assertEquals("1", get(1))
     }
 
     @Test
     fun testReturnsFizzForMultiplesOf3() {
-        assertEquals("fizz", classToTest.get(6))
-        assertEquals("fizz", classToTest.get(9))
-        assertEquals("fizz", classToTest.get(12))
+        assertEquals("fizz", get(6))
+        assertEquals("fizz", get(9))
+        assertEquals("fizz", get(12))
     }
 
     @Test
     fun testReturnsFizzbuzzFor15() {
-        assertEquals("fizzbuzz", classToTest.get(15))
+        assertEquals("fizzbuzz", get(15))
     }
 
     @Test
     fun testReturnsBuzzForMultiplesOf5() {
-        assertEquals("buzz", classToTest.get(10))
-        assertEquals("buzz", classToTest.get(20))
-        assertEquals("buzz", classToTest.get(25))
+        assertEquals("buzz", get(10))
+        assertEquals("buzz", get(20))
+        assertEquals("buzz", get(25))
     }
 }
-
